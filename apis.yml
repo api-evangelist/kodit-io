@@ -1,22 +1,75 @@
 aid: kodit-io
-name: Kodit Io
-description: Kodit Io is a company surfaced as a portfolio company of speedinvest and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/kodit-io.png
+name: Kodit.io
+description: Kodit.io was a Helsinki-based proptech and "iBuyer" that used machine learning
+  and automation to make instant cash offers on residential property, buying homes directly
+  from sellers and reselling them, with operations in Finland, Spain and Poland. Founded in
+  2017 and backed by Speedinvest among others, the company rebranded to Rive in 2022 after a
+  EUR 23M Series A aimed at simplifying home buying and selling across Europe. In January 2024
+  Rive (formerly Kodit.io) transferred its entire Finnish real estate brokerage business to
+  Neliöt Liikkuu LKV, and the Kodit.io LKV entity subsequently entered bankruptcy proceedings
+  in late 2024. The company operated a consumer-facing marketplace only; it never published a
+  public developer portal, API documentation, SDKs, or machine-readable API artifacts, and the
+  kodit.io domain has since lapsed to an unrelated registrant. This profile is retained as a
+  historical network record.
 url: https://raw.githubusercontent.com/api-evangelist/kodit-io/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - speedinvest
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: defunct-no-api-surface
+x-status: defunct
+x-status-notes: Rebranded to Rive (2022); Finnish brokerage business transferred to Neliöt
+  Liikkuu LKV in January 2024; Kodit.io LKV bankruptcy proceedings filed by the Finnish tax
+  authority in November 2024. No public API surface was ever published.
+x-former-names:
+- Rive
+x-successor:
+  name: Neliöt Liikkuu LKV
+  url: https://www.neliotliikkuu.fi
+  note: Acquired Rive (formerly Kodit.io) Finnish real estate brokerage operations, January 2024.
+x-former-domains:
+- domain: kodit.io
+  status: lapsed
+  note: Redirects to an unrelated site (playkahoot.io); registrant is now Domains By Proxy.
+- domain: rivekodit.fi
+  status: redirect
+  note: 301 redirects to www.neliotliikkuu.fi.
+x-headquarters: Helsinki, Finland
+x-founded: '2017'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Real Estate
+- Proptech
+- Marketplace
+- Finland
+- Europe
+- Machine Learning
+- Defunct
 apis: []
+common: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
