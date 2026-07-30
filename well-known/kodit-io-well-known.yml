@@ -1,0 +1,70 @@
+generated: '2026-07-19'
+method: searched
+source: live probe of the company's former domains
+result: none
+notes: >-
+  No .well-known discovery surface exists for Kodit.io. The company is defunct: it rebranded
+  to Rive in 2022, transferred its Finnish brokerage operations to Neliöt Liikkuu LKV in
+  January 2024, and the kodit.io domain has since lapsed to an unrelated registrant. Every
+  path below 301-redirects off the original host and returns 404 at the destination. No
+  document was saved and no WellKnown/SecurityTxt pointer is wired into apis.yml, because
+  nothing was found. Recorded so future pipeline runs do not re-probe blindly.
+hosts:
+- host: kodit.io
+  owned_by_company: false
+  note: Lapsed; 301 redirects to playkahoot.io (unrelated registrant, Domains By Proxy).
+  documents:
+  - path: /.well-known/security.txt
+    status: 301
+    final_status: 404
+    final_url: https://playkahoot.io/.well-known/security.txt
+  - path: /.well-known/openid-configuration
+    status: 301
+    final_status: 404
+    final_url: https://playkahoot.io/.well-known/openid-configuration
+  - path: /.well-known/oauth-authorization-server
+    status: 301
+    final_status: 404
+    final_url: https://playkahoot.io/.well-known/oauth-authorization-server
+  - path: /.well-known/api-catalog
+    status: 301
+    final_status: 404
+    final_url: https://playkahoot.io/.well-known/api-catalog
+  - path: /.well-known/ai-plugin.json
+    status: 301
+    final_status: 404
+    final_url: https://playkahoot.io/.well-known/ai-plugin.json
+- host: rivekodit.fi
+  owned_by_company: false
+  note: Former Rive (ex-Kodit.io) domain; 301 redirects to the acquirer www.neliotliikkuu.fi.
+  documents:
+  - path: /.well-known/security.txt
+    status: 301
+    final_status: 404
+    final_url: https://www.neliotliikkuu.fi/.well-known/security.txt
+  - path: /.well-known/openid-configuration
+    status: 301
+    final_status: 404
+    final_url: https://www.neliotliikkuu.fi/.well-known/openid-configuration
+  - path: /.well-known/oauth-authorization-server
+    status: 301
+    final_status: 404
+    final_url: https://www.neliotliikkuu.fi/.well-known/oauth-authorization-server
+  - path: /.well-known/api-catalog
+    status: 301
+    final_status: 404
+    final_url: https://www.neliotliikkuu.fi/.well-known/api-catalog
+  - path: /.well-known/ai-plugin.json
+    status: 301
+    final_status: 404
+    final_url: https://www.neliotliikkuu.fi/.well-known/ai-plugin.json
+llms_txt:
+  path: /llms.txt
+  host: rivekodit.fi
+  status: 404
+packages:
+  searched: [npm, pypi, github]
+  result: none
+  notes: >-
+    npm "kodit" 404; PyPI "kodit" exists but is helixml/kodit (a code-indexing tool), not
+    first-party; no GitHub organization at kodit-io or koditio.
