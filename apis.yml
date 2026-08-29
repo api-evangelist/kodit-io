@@ -35,6 +35,8 @@ description: Kodit.io was a Helsinki-based proptech and "iBuyer" that used machi
   kodit.io domain has since lapsed to an unrelated registrant. This profile is retained as a
   historical network record.
 url: https://raw.githubusercontent.com/api-evangelist/kodit-io/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
