@@ -67,12 +67,12 @@ created: '2026-07-17'
 modified: '2026-07-19'
 tags:
 - Company
-- Real-Estate
+- Real Estate
 - PropTech
 - Marketplace
 - Finland
 - Europe
-- Machine-Learning
+- Machine Learning
 - Defunct
 tags_raw:
 - Company
@@ -83,6 +83,8 @@ tags_raw:
 - Europe
 - Machine Learning
 - Defunct
+- Real-Estate
+- Machine-Learning
 apis: []
 common: []
 maintainers:
